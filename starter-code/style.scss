@@ -51,65 +51,102 @@ body {
 
   .container {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    margin-left: 7%;
-    margin-right: 7%;
+    
 
-    .content {
+    width: 60%;
+    margin: auto;
+
+    .main{
       width: 70%;
 
-      .app {
-        display: flex;
+      .content {
+      
+
+        .app {
+          display: flex;
+          background-color: white;
+          padding: 20px;
+          border-bottom: solid 1px #e8e8e8;
+  
+          .app-description-comments {
+  
+            margin-left: 30px;
+  
+            img {
+              display: inline;
+            }
+  
+            h3 {
+              margin-bottom: 3px;
+              margin-top: 3px;
+            }
+  
+            p {
+              margin-top: 3px;
+            }
+  
+            .tag {
+              display: inline;
+            }
+            
+          }
+  
+          &.first {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+  
+          &.last {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+        }
+  
+      }
+    }
+
+    .aside{
+      margin-left: 30px;
+
+      .bot {
         background-color: white;
-        padding: 20px;
-        border-bottom: solid 1px #e8e8e8;
+        border-radius: 10px;
 
-        .app-description-comments {
-
-          margin-left: 30px;
-
-          img {
-            display: inline;
-          }
-
-          h3 {
-            margin-bottom: 3px;
-            margin-top: 3px;
-          }
-
-          p {
-            margin-top: 3px;
-          }
-
-          .tag {
-            display: inline;
-          }
-          
+        p{
+          margin-top: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-weight: lighter;
         }
 
-        &.first {
-          border-top-right-radius: 10px;
-          border-top-left-radius: 10px;
+        h4 {
+          margin-bottom: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
         }
 
-        &.last {
-          border-bottom-right-radius: 10px;
-          border-bottom-left-radius: 10px;
+        .red {
+          background-color: #D6573E;
+          border: none;
+          padding: 5px 8px;
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          margin-left: 10px;
+          color: white;
+          font-weight: bolder;
         }
       }
-
     }
+    
   }
 
-    // .aside{
-    //   width: 35%;
+  
 
-    //   .app {
-        
-    //   }
-    // }
-
-  }
+}
 
 
