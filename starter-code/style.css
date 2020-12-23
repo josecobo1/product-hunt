@@ -13,7 +13,6 @@ body .navbar .navigation {
   width: 60%;
   display: flex;
   justify-content: center;
-  border: solid 1px red;
   padding-right: 10%;
 }
 body .navbar .navigation img {
@@ -23,69 +22,53 @@ body .navbar .navigation img {
 body .navbar .navigation a {
   margin: 15px;
   font-size: 18px;
-  border: solid 1px pink;
 }
 body .navbar .session {
-  border: solid 1px green;
   display: flex;
   justify-content: center;
 }
 body .navbar .session button {
   margin: 15px;
 }
-body .content {
-  border: 1px solid green;
-  width: 50%;
-  margin-left: 10%;
-  margin-top: 50px;
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
 }
-body .content .content-title {
-  width: 100%;
-  border: 1px solid blue;
-  margin-bottom: 10px;
+body .container .content {
+  width: 70%;
 }
-body .content .content-title h3 {
+body .container .content .app {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-bottom: solid 1px #e8e8e8;
+}
+body .container .content .app .app-description-comments {
+  margin-left: 30px;
+}
+body .container .content .app .app-description-comments img {
   display: inline;
 }
-body .content .content-title .filters {
-  float: right;
-  border: 1px solid red;
+body .container .content .app .app-description-comments h3 {
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
-body .content .content-title .filters h5 {
-  display: inline;
-  border: solid 1px pink;
+body .container .content .app .app-description-comments p {
+  margin-top: 3px;
 }
-body .content .content-apps {
-  background-color: #ffffff;
-}
-body .content .content-apps .app {
-  margin: 15px;
-  border: solid 1px pink;
-}
-body .content .content-apps .app img {
+body .container .content .app .app-description-comments .tag {
   display: inline;
 }
-body .content .content-apps .app img.app-logo {
-  width: 80px;
+body .container .content .app.first {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-body .content .content-apps .app img.comments {
-  width: 12px;
-  height: 11px;
-}
-body .content .content-apps .app .app-info {
-  height: 100%;
-  float: right;
-  border: 1px solid pink;
-  margin-right: 180px;
-}
-body .content .content-apps .app .app-info p {
-  line-height: 5px;
-}
-body .content .content-apps .app .app-info p.app-name {
-  font-weight: bold;
-}
-body .content .content-apps .app .app-info p.app-description {
-  font-weight: lighter;
+body .container .content .app.last {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
