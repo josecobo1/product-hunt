@@ -1,0 +1,153 @@
+$margin: 15px;
+
+body {
+
+    background-color: #F3F3F3;
+    margin: 0;
+
+  .navbar {
+
+    background-color: #ffffff;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    border: 1px solid #e8e8e8;
+
+    .navigation {
+      width: 60%;
+
+      display: flex;
+
+      justify-content: center;
+
+      border: solid 1px red;
+
+      padding-right: 10%;
+
+      img {
+        width: 50px;
+
+        margin-right: $margin;
+      }
+
+      a {
+        margin: $margin;
+        font-size: 18px;
+        border: solid 1px pink;
+      }
+    }
+
+    .session {
+      border: solid 1px green;
+
+      display: flex;
+
+      justify-content: center;
+
+      button {
+        margin: $margin;
+      }
+    }
+  }
+
+  .content{
+
+    border: 1px solid green;
+
+    width: 50%;
+
+    margin-left: 10%;
+   
+    margin-top: 50px;
+    
+
+    .content-title{
+
+        width: 100%;
+
+        border: 1px solid blue;
+
+        margin-bottom: 10px;
+
+        h3{
+
+            display: inline;
+
+        }
+
+       .filters{
+
+            float: right;
+
+            border: 1px solid red;
+
+            h5 {
+                display: inline;
+                border: solid 1px pink;
+            }
+
+
+       }
+    }
+    
+    .content-apps{
+
+        background-color: #ffffff;
+
+        .app{
+
+            margin: 15px;
+
+            border: solid 1px pink;
+
+            img{
+                
+                display: inline;
+
+                &.app-logo{
+                    width: 80px;
+                }
+
+                &.comments{
+                    width: 12px;
+                    height: 11px;
+                }
+
+            }
+
+            .app-info{
+                height: 100%;
+                float: right;
+                border: 1px solid pink;
+                margin-right: 180px;
+
+                p{
+                    line-height: 5px;
+
+                    &.app-name{
+                        font-weight: bold;
+                    }
+
+                    &.app-description{
+                        font-weight: lighter;
+                    }
+
+                }
+
+                
+
+                
+            }
+
+
+        }
+
+    }
+
+  }
+
+}
