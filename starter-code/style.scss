@@ -1,7 +1,5 @@
 $margin: 15px;
 
-
-
 body {
     overflow-x: hidden;
     background-color: #F3F3F3;
@@ -25,6 +23,21 @@ body {
     position: sticky;
     top: 0;
 
+    align-items: center;
+
+    color: #6f6f6f;
+
+    input {
+      width: 300px;
+      height: 35px;
+    }
+
+    img {
+      width: 60px;
+
+      margin-right: $margin;
+    }
+
     .navigation {
       max-width: 1070px;
 
@@ -34,20 +47,11 @@ body {
 
       align-items: center;
 
-      input {
-        width: 300px;
-        height: 35px;
-      }
-
-      img {
-        width: 60px;
-
-        margin-right: $margin;
-      }
-
       a {
         margin: $margin;
         font-size: 18px;
+        color: #6f6f6f;
+        text-decoration: none;
       }
     }
 
@@ -79,11 +83,11 @@ body {
     margin: auto;
     margin-bottom: 40px;
 
-    // lista de apps
     .main{
-    //  width: 720px;
       width: 100%;
       .content {
+
+        width: 100%;
       
         .app {
           height: 120px;
@@ -95,6 +99,9 @@ body {
 
           .app-logo {
             width: 80px;
+            img{
+              width: 80px;
+            }
           }
   
           .app-description-comments {
@@ -112,6 +119,7 @@ body {
   
             p {
               margin-top: 3px;
+              word-wrap: break-word;
             }
   
             .tag {
@@ -134,7 +142,6 @@ body {
       }
     }
 
-    // caja lateral
     .aside{
       margin-left: 20px;
       width: 330px;
@@ -235,5 +242,3 @@ body {
   }
   
 }
-
-
