@@ -1,5 +1,7 @@
 $margin: 15px;
 
+
+
 body {
     overflow-x: hidden;
     background-color: #F3F3F3;
@@ -20,10 +22,13 @@ body {
 
     border: 1px solid #e8e8e8;
 
+    position: sticky;
+    top: 0;
+
     .navigation {
       max-width: 1070px;
 
-      display: flex;
+      display: none;
 
       justify-content: center;
 
@@ -74,9 +79,10 @@ body {
     margin: auto;
     margin-bottom: 40px;
 
+    // lista de apps
     .main{
-      width: 720px;
-
+    //  width: 720px;
+      width: 100%;
       .content {
       
         .app {
@@ -128,10 +134,11 @@ body {
       }
     }
 
+    // caja lateral
     .aside{
       margin-left: 20px;
       width: 330px;
-
+      display: none;
       .bot {
         background-color: white;
         border-radius: 10px;
@@ -204,10 +211,29 @@ body {
 
     }
     
+
   }
 
-  
+}
 
+@media only screen and (min-width: 1100px) {
+
+  body{
+    .navbar{
+      .navigation{
+        display: flex;
+      }
+    }
+    .container{
+      .main{
+        width: 720px;
+      }
+      .aside{
+        display: block;
+      }
+    }
+  }
+  
 }
 
 

@@ -11,10 +11,12 @@ body .navbar {
   display: flex;
   justify-content: center;
   border: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
 }
 body .navbar .navigation {
   max-width: 1070px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -53,7 +55,7 @@ body .container {
   margin-bottom: 40px;
 }
 body .container .main {
-  width: 720px;
+  width: 100%;
 }
 body .container .main .content .app {
   height: 120px;
@@ -93,6 +95,7 @@ body .container .main .content .app.last {
 body .container .aside {
   margin-left: 20px;
   width: 330px;
+  display: none;
 }
 body .container .aside .bot {
   background-color: white;
@@ -153,6 +156,18 @@ body .container .aside .live-chat .contact .contact-info .contact-position {
 }
 body .container .aside .live-chat .contact .contact-info .remin-me {
   margin-top: 0px;
+}
+
+@media only screen and (min-width: 1100px) {
+  body .navbar .navigation {
+    display: flex;
+  }
+  body .container .main {
+    width: 720px;
+  }
+  body .container .aside {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
